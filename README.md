@@ -4,7 +4,7 @@ Starter project for any Structor compatible boilerplate.
 There is no UI or CSS frameworks, just working example of async fetching of data from REST service. 
 To implement async methods we used experimental branch of ```redux-actions``` and ```redux-promise```. 
  
-<img src="" style="width: 100%"></img>
+<img src="https://github.com/ipselon/structor-starter-prepack/blob/master/screenshot.png" style="width: 100%"></img>
 <br/>
 
 ### Technologies and libraries
