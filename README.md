@@ -9,7 +9,7 @@ To implement async methods we used experimental branch of ```redux-actions``` an
 
 ### Technologies and libraries
 The following libs and technlogies were used:
-* ```react``` (0.14)
+* ```react```
 * ```react-router```
 * ```redux``` (```react-redux```, ```redux-actions```, ```redux-promise```)
 * ```express```
@@ -184,9 +184,3 @@ Then, if everything were built and you didn't stop backend server, just go to ht
 <br/>
 ### License
 MIT
-
-
-
-
-
-

@@ -1,5 +1,5 @@
 import { readData } from '../api';
-import { createAction, handleActions } from '../reduxActionsSequence';
+import { createAction, handleActions } from './reduxActionsSequence';
 
 const FETCH_SERVER_DATA = 'FETCH_SERVER_DATA';
 
@@ -10,9 +10,6 @@ export const fetchServerData = createAction(FETCH_SERVER_DATA, () => {
         });
 });
 
-/**
- * State substructure: { application }
- */
 export default handleActions({
 
     [FETCH_SERVER_DATA]: {

@@ -1,8 +1,8 @@
+import serverActionsReducer from '../actions/serverActions.js';
 import {combineReducers} from 'redux';
-import applicationReducer from './applicationReducer.js';
 
 const rootReducer = combineReducers({
-    application: applicationReducer
+    application: serverActionsReducer
 });
 
 export default rootReducer;

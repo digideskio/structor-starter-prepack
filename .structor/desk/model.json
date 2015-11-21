@@ -1,8 +1,4 @@
 {
-  "name": "${projectName}",
-  "lib_components": [
-    "Bootstrap"
-  ],
   "pages": [
     {
       "pageName": "HomePage",

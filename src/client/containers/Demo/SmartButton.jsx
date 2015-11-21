@@ -2,7 +2,7 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 
-import { fetchServerData } from '../../actions/serverActions.js';
+import { fetchServerData } from '../../actions/index.js';
 
 class SmartButton extends Component {
 
