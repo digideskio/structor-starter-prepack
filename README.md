@@ -1,3 +1,6 @@
+[![structor compatible](https://img.shields.io/badge/structor%20compatible-v0.2.0-0077dd.svg?style=flat)](http://helmetrex.com)
+
+
 ### Description
 
 Starter project for any Structor compatible boilerplate. 
