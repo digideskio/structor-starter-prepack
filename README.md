@@ -1,4 +1,4 @@
-[![structor compatible](https://img.shields.io/badge/structor%20compatible-v0.2.0-0077dd.svg?style=flat)](http://helmetrex.com)
+[![structor compatible](https://img.shields.io/badge/structor%20compatible-v0.2.4-0077dd.svg?style=flat)](http://helmetrex.com)
 
 
 ### Description
@@ -6,6 +6,14 @@
 Starter project for any Structor compatible boilerplate. 
 There is no UI or CSS frameworks, just working example of async fetching of data from REST service. 
 To implement async methods we used experimental branch of ```redux-actions``` and ```redux-promise```. 
+
+### Documentation
+
+Structor's documentation:
+
+* [Structor's component model representation](https://github.com/ipselon/structor/wiki/Structor's-component-model-representation)
+* [Generators metadata overview](https://github.com/ipselon/structor/wiki/Generators-metadata-overview)
+* [Structor shortcuts](https://github.com/ipselon/structor/wiki/Structor-shortcuts)
  
 <img src="https://github.com/ipselon/structor-starter-prepack/blob/master/screenshot.png" style="width: 100%"></img>
 <br/>
