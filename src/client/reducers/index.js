@@ -1,4 +1,4 @@
-import serverActionsReducer from '../actions/serverActions.js';
+import serverActionsReducer from '../actions/Demo/serverActions.js';
 import {combineReducers} from 'redux';
 
 const rootReducer = combineReducers({

@@ -22,7 +22,7 @@ Structor's documentation:
 The following libs and technlogies were used:
 * ```react```
 * ```react-router```
-* ```redux``` (```react-redux```, ```redux-actions```, ```redux-promise```)
+* ```redux```, ```react-redux```, ```redux-thunk```
 * ```express```
 <br/>
 <br/>

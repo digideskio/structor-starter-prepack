@@ -1,19 +1,23 @@
-import { readData } from '../api';
-import { createAction, handleActions } from './reduxActionsSequence';
+import { readData } from '../../api';
+import { START, DONE, ERROR, parseAction, wrapPromise } from '../reduxActionsSequence/reduxActionsUtils.js';
 
 const FETCH_SERVER_DATA = 'FETCH_SERVER_DATA';
 
-export const fetchServerData = createAction(FETCH_SERVER_DATA, () => {
-    return readData()
-        .then( response => {
-            return response.list;
-        });
-});
+export function fetchServerData() {
+    return (dispatch, getState) => wrapPromise(FETCH_SERVER_DATA, dispatch, () => {
+        return readData()
+            .then( response => {
+                return response.list;
+            });
+    });
+}
 
-export default handleActions({
-
-    [FETCH_SERVER_DATA]: {
-        start(state, action){
+export default function(state = {}, action = {
+    type: 'UNKNOWN'
+}) {
+    const {type, stage, payload} = parseAction(action);
+    if (type === FETCH_SERVER_DATA) {
+        if (stage === START) {
             const serverData = Object.assign({}, state.serverData, {
                 fetching: {
                     status: 'loading',
@@ -24,8 +28,8 @@ export default handleActions({
             });
             state = Object.assign({}, state, { serverData: serverData });
             return state;
-        },
-        next(state, action){
+        }
+        if (stage === DONE) {
             const serverData = Object.assign({}, state.serverData, {
                 fetching: {
                     status: 'done',
@@ -36,9 +40,8 @@ export default handleActions({
             });
             state = Object.assign({}, state, { serverData: serverData });
             return state;
-        },
-        throw(state, action){
-            console.log('Error is obtained');
+        }
+        if (stage === ERROR) {
             const serverData = Object.assign({}, state.serverData, {
                 fetching: {
                     status: 'done',
@@ -52,5 +55,5 @@ export default handleActions({
         }
     }
 
-}, {});
-
+    return state;
+}
