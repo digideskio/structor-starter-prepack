@@ -1,6 +1,6 @@
 <%
     function processChild(model){
-        var result = '<' + model.type + ' ' + processProps(model.props) + ' params={this.props.params}>';
+        var result = '<' + model.type + ' ' + processProps(model.props) + ' params={this.props.params} location={this.props.location}>';
         if(model.children && model.children.length > 0) {
             _.forEach(model.children, function(child) {
                 result += processChild(child);
@@ -64,7 +64,6 @@
 
 %>
 import React, { Component, PropTypes } from 'react';
-<% _.forEach(resources.requires, function(item, index) { %><%= '\n' %>import '<%= item.relativeSource %>';<% }); %>
 <% _.forEach(imports, function(item, index) { %><%= '\n' %><% if(item.member){ %>import { <%= item.member %> } from '<%= item.relativeSource %>';<% } else {%>import <%= item.name %> from '<%= item.relativeSource %>';<% } %><% }); %>
 
 

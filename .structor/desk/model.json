@@ -10,119 +10,16 @@
             "style": {
               "padding": "1em",
               "textAlign": "center"
-            },
-            "data-umyid": "2"
+            }
           },
           "children": [
             {
               "type": "span",
-              "text": "Click on the button below to fetch data from the server, if you see an Error, please check if you have started local server from the root folder of current project: node ./server.js",
-              "props": {
-                "data-umyid": "3"
-              }
-            }
-          ]
-        },
-        {
-          "variantName": "Unsaved variant",
-          "type": "div",
-          "props": {
-            "style": {
-              "width": "90%",
-              "margin": "0 5% 0 5%"
-            },
-            "data-umyid": "4"
-          },
-          "children": [
-            {
-              "variantName": "Unsaved variant",
-              "type": "div",
-              "props": {
-                "style": {
-                  "width": "100%"
-                },
-                "data-umyid": "5"
-              },
-              "children": [
-                {
-                  "type": "SmartPanel",
-                  "props": {
-                    "style": {
-                      "textAlign": "center"
-                    },
-                    "data-umyid": "6"
-                  }
-                },
-                {
-                  "variantName": "Unsaved variant",
-                  "type": "div",
-                  "props": {
-                    "style": {
-                      "display": "table",
-                      "width": "100%"
-                    },
-                    "data-umyid": "7"
-                  },
-                  "children": [
-                    {
-                      "variantName": "Unsaved variant",
-                      "type": "div",
-                      "props": {
-                        "style": {
-                          "display": "table-row"
-                        },
-                        "data-umyid": "8"
-                      },
-                      "children": [
-                        {
-                          "variantName": "Unsaved variant",
-                          "type": "div",
-                          "props": {
-                            "style": {
-                              "display": "table-cell",
-                              "textAlign": "center"
-                            },
-                            "data-umyid": "9"
-                          },
-                          "children": [
-                            {
-                              "variantName": "Unsaved variant",
-                              "type": "SmartButton",
-                              "props": {
-                                "style": {
-                                  "height": "2em"
-                                },
-                                "data-umyid": "10"
-                              },
-                              "children": []
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "variantName": "Unsaved variant",
-              "type": "LandingImage",
-              "props": {
-                "style": {
-                  "width": "100%"
-                },
-                "data-umyid": "11"
-              }
+              "text": "Click on me and start creating a new cool page."
             }
           ]
         }
-      ],
-      "props": {
-        "data-umyid": "1"
-      },
-      "pageTitle": "HomePage",
-      "pageProps": [],
-      "pageScript": ""
+      ]
     }
   ]
 }
