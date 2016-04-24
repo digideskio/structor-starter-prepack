@@ -26,7 +26,7 @@ The following libs and technlogies were used:
 If you want to see the app in action please do the following:
 * Go to folder where you unpack downloaded package.
 * Run command: ```npm install```
-* Run command: ```npm run build-client```
+* Run command: ```npm run build```
 * Run command: ```node ./server.js```
 * Go to http://localhost:3000
 
@@ -75,7 +75,7 @@ Also you may edit templates for output React components in ```.structor/template
 <br/>
 ### Building and trying a real Web app
 Having exported pages and routes you can run webpack's build script:
-* ```npm run build-client```
+* ```npm run build```
 
 Then, if everything were built and you didn't stop backend server, just go to http://localhost:3000
 <br/>
