@@ -1,4 +1,4 @@
 import { combineReducers } from 'redux';
-const reducer = combineReducers({
-});
+import test1Reducer from '../controllers/Test/Test1/reducer.js';
+const reducer = combineReducers({ test1: test1Reducer });
 export default reducer;
