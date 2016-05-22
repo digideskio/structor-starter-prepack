@@ -1,4 +1,4 @@
-[![structor compatible](https://img.shields.io/badge/structor%20compatible-v1.0.8-0077dd.svg?style=flat)](http://helmetrex.com)
+[![structor compatible](https://img.shields.io/badge/structor%20compatible-v1.0.10-0077dd.svg?style=flat)](http://helmetrex.com)
 
 ### Description
 
